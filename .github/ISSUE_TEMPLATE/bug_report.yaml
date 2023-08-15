@@ -1,6 +1,9 @@
 name: 漏洞报告
 description: 创建一个报告来帮助我们改进
 title: "漏洞："
+labels: "漏洞"
+assignees:
+  - Hosiyume
 body:
   - type: dropdown
     id: os
@@ -8,7 +11,7 @@ body:
       label: 操作系统
       multiple: false
       options:
-        - 平台无关
+        - 未知/平台无关
         - Windows
         - Android
         - iOS
