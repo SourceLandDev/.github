@@ -1,0 +1,58 @@
+name: 漏洞报告
+description: 创建一个报告来帮助我们改进
+title: "漏洞："
+body:
+  - type: dropdown
+    id: os
+    attributes:
+      label: 操作系统
+      multiple: false
+      options:
+        - 平台无关
+        - Windows
+        - Android
+        - iOS
+        - Switch
+        - Xbox
+        - PlayStation
+        - 其他（在描述中补充）
+    validations:
+      required: true
+  - type: input
+    id: bdsversion
+    attributes:
+      label: Minecraft版本
+      placeholder: 比如[1.6.0]
+    validations:
+      required: true
+  - type: textarea
+    id: describe-the-bug
+    attributes:
+      label: 描述漏洞
+      description: 对漏洞是怎样的清晰而简洁的描述。
+    validations:
+      required: true
+  - type: textarea
+    id: to-Reproduce
+    attributes:
+      label: 重现步骤
+      description: 重现漏洞的步骤
+      placeholder: |
+        1. 打开……
+        2. 走到……
+        3. 进行……
+        4. 漏洞复现
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期行为
+      description: 清晰简洁地描述你期望发生的事情。
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加上下文
+      description: 在此处添加有关该问题的任何其他上下文。
