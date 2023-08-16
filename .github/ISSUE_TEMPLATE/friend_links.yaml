@@ -25,6 +25,19 @@ body:
       placeholder: 比如[19132]
     validations:
       required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 类型
+      multiple: false
+      options:
+        - 纯生存/生电
+        - 生存
+        - 特殊生存（空岛/xx大陆）
+        - RPG
+        - 小游戏
+        - 群租服
+        - 其他（在描述中补充）
   - type: textarea
     id: introduction
     attributes:
@@ -37,7 +50,7 @@ body:
     attributes:
       label: 是否已将本服务器（源域）添加至您服务器的友链列表
       options:
-        - label: 是
+        - label: 是（证明材料请在附加上下文中补充）
           required: true
   - type: textarea
     id: additional-context
