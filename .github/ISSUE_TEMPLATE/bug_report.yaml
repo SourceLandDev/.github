@@ -22,7 +22,7 @@ body:
     validations:
       required: true
   - type: input
-    id: bdsversion
+    id: version
     attributes:
       label: Minecraft版本
       placeholder: 比如[1.6.0]

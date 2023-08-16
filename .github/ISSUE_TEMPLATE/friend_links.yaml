@@ -1,0 +1,38 @@
+name: 友链申请
+description: 携手共进（迫真
+title: "友链："
+labels: "友链"
+assignees:
+  - Hosiyume
+body:
+  - type: markdown
+    attributes:
+      value: 注意：本服务器的友链列表只会显示同协议版本的服务器
+  - type: input
+    id: ip
+    attributes:
+      label: 地址
+      placeholder: 比如[server.top]
+    validations:
+      required: true
+  - type: input
+    id: port
+    attributes:
+      label: 端口
+      placeholder: 比如[19132]
+    validations:
+      required: true
+  - type: textarea
+    id: introduction
+    attributes:
+      label: 简介
+      description: 对您服务器的清晰而简洁的描述。
+    validations:
+      required: true
+  - type: checkboxes
+    id: has-added
+    attributes:
+      label: 是否已将本服务器（源域）添加至您服务器的友链列表
+      options:
+        - label: 是
+          required: true
