@@ -7,7 +7,10 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: 注意：本服务器的友链列表只会显示同协议版本的服务器
+      value: |
+        注意：
+        1. 本服务器的友链列表只会显示同协议版本的服务器
+        2. 仅限服务器管理组或已获得服务器管理组授权者进行申请，证明材料请在附加上下文中补充
   - type: input
     id: ip
     attributes:
@@ -36,3 +39,8 @@ body:
       options:
         - label: 是
           required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加上下文
+      description: 在此处添加有关功能请求的任何其他上下文或屏幕截图。
