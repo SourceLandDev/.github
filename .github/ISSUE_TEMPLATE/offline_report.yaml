@@ -1,0 +1,32 @@
+name: 服务下线报告
+description: 提醒我们恢复服务
+title: "下线："
+labels: "下线"
+assignees:
+  - Hosiyume
+body:
+  - type: dropdown
+    id: service
+    attributes:
+      label: 服务
+      multiple: false
+      options:
+        - 未知/所有
+        - 源域
+        - 方屿
+        - 源域（测试）
+        - 源域（Ace Of Spades 0.95）
+        - MTPROTO代理
+        - 其他（在描述中补充）
+    validations:
+      required: true
+  - type: input
+    id: last-up-time
+    attributes:
+      label: 最后上线时间（UTF+8）
+      placeholder: 比如[2024/9/15 14:23]
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加上下文
+      description: 在此处添加有关该问题的任何其他上下文。
