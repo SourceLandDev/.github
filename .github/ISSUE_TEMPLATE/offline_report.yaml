@@ -1,7 +1,7 @@
-name: 服务异常报告
+name: 服务无响应报告
 description: 提醒我们恢复服务
-title: "异常："
-labels: "异常"
+title: "无响应："
+labels: "无响应"
 assignees:
   - Hosiyume
 body:
