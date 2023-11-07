@@ -1,0 +1,17 @@
+name: 用户举报
+description: 举报用户违规行为
+title: "举报："
+labels: "举报"
+assignees:
+  - Hosiyume
+body:
+  - type: input
+    id: player
+    attributes:
+      label: 被举报用户
+      placeholder: 比如Steve
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 附加上下文
+      description: 在此处添加有关该问题的任何其他上下文。

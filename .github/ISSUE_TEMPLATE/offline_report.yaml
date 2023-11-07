@@ -15,8 +15,8 @@ body:
         - 源域
         - 方屿
         - 源域（测试）
+        - 源域（星光）
         - Telegram人机验证
-        - MTPROTO代理
         - 其他（在描述中补充）
     validations:
       required: true
